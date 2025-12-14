@@ -1,0 +1,10 @@
+name = "notebook"
+version = "0.1.0"
+defaultTargets = ["notebook"]
+
+[[lean_lib]]
+name = "Notebook"
+
+[[lean_exe]]
+name = "notebook"
+root = "Main"
