@@ -11,9 +11,7 @@
 
     pkgs = nixpkgs.legacyPackages.${system};
 
-    python = pkgs.python313;
-
-    pythonEnv = python.withPackages (ps: with ps; [
+    pythonEnv = pkgs.python313.withPackages (ps: with ps; [
       livereload
     ]);
 
@@ -22,10 +20,13 @@
     devShells.${system}.default = pkgs.mkShell {
 
       nativeBuildInputs = [
+        pkgs.elan
+        pkgs.gcc
+        pkgs.nodejs_24
         pythonEnv
       ];
 
-      shellHook = "echo 'Python ENV is ready.'";
+      shellHook = "echo 'Develop Env is Set.'";
     };
   };
 }
