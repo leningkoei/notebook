@@ -1,6 +1,5 @@
 import VersoManual
 
--- import Mathlib.Tactic.TacticAnalysis
 import Mathlib.Data.Real.Basic
 
 example : 1 = 1 := rfl
@@ -129,4 +128,3 @@ example : prop3 α A ↔ prop4 α A := by
 命题: 对于任意2个数$`x`和$`y`, 当且仅当$`∀ε > 0, |x - y| < ε`时$`x = y`. 这个命
 题断言如果2个数可以任意接近(这意味着我们可以选择任意小的距离$`ε`, 并且这2个数之
 间的距离比$`ε`还要小), 那么它们就是相等的.
-

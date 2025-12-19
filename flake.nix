@@ -20,7 +20,7 @@
     devShells.${system}.default = pkgs.mkShell {
 
       nativeBuildInputs = [
-        pkgs.elan
+        pkgs.lean4
         pkgs.gcc
         pkgs.nodejs_24
         pythonEnv

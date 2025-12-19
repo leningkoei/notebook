@@ -13,7 +13,7 @@ def config : Verso.Genre.Manual.Config where
   htmlDepth := 3
 
 def main :=
-  Verso.Genre.Manual.manualMain (%doc Notebook) (config := config.addKaTeX)
+  Verso.Genre.Manual.manualMain (%doc Notebook) (config := config)
 
 -- def main : IO Unit :=
 --   IO.println s!"Hello, {hello}!"
